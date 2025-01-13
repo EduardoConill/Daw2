@@ -1,0 +1,61 @@
+/* Button Container Styling */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start; /* Alinea botones a la izquierda */
+    margin-top: 1rem;
+}
+
+/* General Button Styling */
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #1175cc;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #1175cc;
+}
+
+/* Warning Button */
+.btn-warning {
+    background-color: #bbb018;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #bbb018;
+}
+
+/* Danger Button */
+.btn-danger {
+    background-color: #70053b;
+    color: #fff;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    div {
+        flex-direction: column; /* Botones en columna para pantallas pequeñas */
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

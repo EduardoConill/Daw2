@@ -1,0 +1,122 @@
+/* General Section Styling */
+section {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 2rem 0;
+}
+
+/* Form Card */
+form.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Form Labels */
+label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Form Inputs */
+input.form-control {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #771414;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.btn[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Form Layout and Spacing */
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form.card {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .gap-2 {
+        gap: 1rem;
+    }
+}

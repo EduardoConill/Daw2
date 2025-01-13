@@ -1,0 +1,9 @@
+<div >
+    @if(parent == 'card'){
+        <a [routerLink]="['/user', miId]" class="btn btn-secondary"> Ver detalle</a>
+    }@else if(parent == 'view'){
+        <a [routerLink]="['/home']" class="btn btn-secondary"> Volver al listado</a>
+    }
+    <a [routerLink]="['/actualizar','user', miId]" class="btn btn-warning">Actualizar</a>
+    <button class="btn btn-danger" (click)="borrarUser(miId)">Borrar</button>
+</div>

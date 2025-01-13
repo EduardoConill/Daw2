@@ -1,0 +1,95 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #9cdde9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Row and Image */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 50%;
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #00060c;
+}
+
+/* User Information */
+h1 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #313435;
+    margin: 0.25rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #383737;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    figure img {
+        max-width: 100px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
